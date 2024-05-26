@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Encrimesptaidoberr</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:type" content="encrypter">
+    <meta property="og:title" content="Encrimesptaidoberr">
+    <meta property="og:description" content="Encriptador">
+    <meta property="og:image" content="images/bocchu.gif">
+  </head>
+  <body>
+    <h1>Encrimesptaidoberr</h1>
+    <div>
+      <p id="description">Escribe o un pega un texto para encriptarlo o desencriptarlo. Los acentos no se tomarán en cuenta.</p>
+    </div>
+    <div class="middle">
+      <div class="crypt-box" id="left">
+        <p class="crypt-box-name">Desencriptado</p>
+        <textarea class="crypt-text-input" id="unencrypted-text-input" rows="14" cols="70"
+          placeholder="Texto a encriptar" autofocus="true" id="name"></textarea>
+        <div class="crypt-copy-btn btn" id="left">
+          <button id="encrypt-copy"><img src="images/cat-photocopier.gif" alt="Copiar" width="40" height="40">
+            <p>Copiar</p>
+          </button>
+        </div>
+        <div class="crypt-change-btn btn">
+          <button id="encrypt-btn"><img src="images/hacker-pepe.gif" alt="Encriptar" width="40" height="40">
+            <p>Encriptar</p>
+          </button>
+        </div>
+      </div>
+      <div class="crypt-spacer">
+        <img src="images/arrow-p.svg" id="arrow-top" width="40px" height="40px">
+        <img src="images/arrow-p.svg" id="arrow-bot" width="40px" height="40px">
+      </div>
+      <div class="crypt-box" id="right">
+        <p class="crypt-box-name">Encriptado</p>
+        <textarea class="crypt-text-input" id="encrypted-text-input" rows="14" cols="70"
+          placeholder="Texto a desencriptar" id="name"></textarea>
+        <div class="crypt-copy-btn btn" id="right">
+          <button id="decrypt-copy"><img src="images/cat-photocopier.gif" alt="Copiar" width="40" height="40">
+            <p>Copiar</p>
+          </button>
+        </div>
+        <div class="crypt-change-btn btn">
+          <button id="decrypt-btn"><img src="images/bocchu.gif" alt="Desencriptar" width="40" height="40">
+            <p>Desencriptar</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js" defer></script>
